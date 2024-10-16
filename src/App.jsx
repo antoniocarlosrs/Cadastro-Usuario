@@ -14,29 +14,27 @@ function Home() {
         <Title>Cadastrar Usuários</Title>
 
         <ContainerInputs>
-          <div>
             <div>
               <InputLabel>
-                Nome<span>*</span>
+                Nome<span> *</span>
               </InputLabel>
               <Input type="text" placeholder="Nome do Usuário"/>
             </div>
 
             <div>
             <InputLabel>
-                Idade<span>*</span>
+                Idade<span> *</span>
               </InputLabel>
               <Input type="number" placeholder="Idade do Usuário"/>
             </div>
-          </div>
+        </ContainerInputs>
 
-            <div>
+            <div style={{width: '100%'}}> {/* Style CSS inline, para nao criar compomente */}
             <InputLabel>
-                E-mail<span>*</span>
+                E-mail<span> *</span>
               </InputLabel>
               <Input type="email" placeholder="E-mail do usuário"/>
             </div>
-        </ContainerInputs>
 
         <Button>Cadastrar Usuário</Button>
 
