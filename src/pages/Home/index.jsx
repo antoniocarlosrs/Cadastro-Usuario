@@ -1,8 +1,22 @@
+{/*Importar o Hooks */}
+import { useRef } from "react"
+{/*Importar os componentes */}
 import { Title, Container, Input, ContainerInputs, Button, InputLabel, TopBackground, Form } from "./styles"
 
-import UsersImage from './assets/users.png'
+import UsersImage from '../../assets/users.png'
 
 function Home() {
+  {/*Variável dos inputs */}
+
+  const inputName = useRef()
+  const inputAge = useRef()
+  const inputEmail = useRef()
+
+  
+  function registerNewUser(){
+    console.log(inputName.current.value)
+  }
+
   return (
     <Container>
       <TopBackground>
@@ -18,14 +32,14 @@ function Home() {
               <InputLabel>
                 Nome<span> *</span>
               </InputLabel>
-              <Input type="text" placeholder="Nome do Usuário"/>
+              <Input type="text" placeholder="Nome do Usuário" ref={inputName} />
             </div>
 
             <div>
             <InputLabel>
                 Idade<span> *</span>
               </InputLabel>
-              <Input type="number" placeholder="Idade do Usuário"/>
+              <Input type="number" placeholder="Idade do Usuário" ref={inputAge} />
             </div>
         </ContainerInputs>
 
@@ -33,10 +47,10 @@ function Home() {
             <InputLabel>
                 E-mail<span> *</span>
               </InputLabel>
-              <Input type="email" placeholder="E-mail do usuário"/>
+              <Input type="email" placeholder="E-mail do usuário" ref={inputEmail} />
             </div>
 
-        <Button>Cadastrar Usuário</Button>
+        <Button type="button" onClick={registerNewUser}>Cadastrar Usuário</Button>
 
       </Form>
 
