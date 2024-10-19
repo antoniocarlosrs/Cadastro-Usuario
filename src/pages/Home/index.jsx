@@ -1,5 +1,7 @@
 {/*Importar o Hooks */}
 import { useRef } from "react"
+import api from "../../services/api"
+
 {/*Importar os componentes */}
 import { Title, Container, Input, ContainerInputs, Button, InputLabel, TopBackground, Form } from "./styles"
 
@@ -12,9 +14,15 @@ function Home() {
   const inputAge = useRef()
   const inputEmail = useRef()
 
-  
-  function registerNewUser(){
-    console.log(inputName.current.value)
+  {/*Chamada da API cadastro de Usuário */}
+  async function registerNewUser(){
+    const data = await api.post('/usuarios', {
+      email: inputEmail.current.value,
+      age: inputAge.current.value,
+      name: inputName.current.value
+    })
+
+    console.log(data)
   }
 
   return (
