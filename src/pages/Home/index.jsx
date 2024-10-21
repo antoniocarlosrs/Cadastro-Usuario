@@ -8,11 +8,10 @@ import { Title,
   Input,
   ContainerInputs,
   InputLabel,
-  TopBackground,
   Form } from "./styles"
 
-import UsersImage from '../../assets/users.png'
 import Button from '../../components/Button'
+import TopBackground from "../../components/TopBackground"
 
 function Home() {
   {/*Variável dos inputs */}
@@ -32,9 +31,8 @@ function Home() {
 
   return (
     <Container>
-      <TopBackground>
-        <img src={UsersImage} alt="Imagem-Usuário"/>
-      </TopBackground>
+
+      <TopBackground></TopBackground>
 
       <Form>
 
