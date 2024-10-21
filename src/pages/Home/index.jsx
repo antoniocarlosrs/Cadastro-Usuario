@@ -3,9 +3,16 @@ import { useRef } from "react"
 import api from "../../services/api"
 
 {/*Importar os componentes */}
-import { Title, Container, Input, ContainerInputs, Button, InputLabel, TopBackground, Form } from "./styles"
+import { Title,
+  Container,
+  Input,
+  ContainerInputs,
+  InputLabel,
+  TopBackground,
+  Form } from "./styles"
 
 import UsersImage from '../../assets/users.png'
+import Button from '../../components/Button'
 
 function Home() {
   {/*Variável dos inputs */}
