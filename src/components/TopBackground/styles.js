@@ -9,7 +9,8 @@ export const Background = styled.div`
     border-radius: 1.8rem;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    margin-bottom: 1.8rem;
 
         img { 
             max-width: 100%;

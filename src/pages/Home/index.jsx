@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import api from "../../services/api"
 
 {/*Importar os componentes */}
-import { Title,
+import {
   Container,
   Input,
   ContainerInputs,
@@ -13,6 +13,7 @@ import { Title,
 
 import Button from '../../components/Button'
 import TopBackground from "../../components/TopBackground"
+import PageTitle from "../../components/PageTitle"
 
 function Home() {
   {/*Variável dos inputs */}
@@ -40,7 +41,7 @@ function Home() {
 
       <Form>
 
-        <Title>Cadastrar Usuários</Title>
+      <PageTitle></PageTitle>
 
         <ContainerInputs>
             <div>

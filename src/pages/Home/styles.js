@@ -17,12 +17,6 @@ export const Form = styled.form`
     gap: 1.3rem;
     max-width: 3125%;
 `
-export const Title = styled.h2`
-    color: #fff;
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 500;
-`
 export const ContainerInputs = styled.div`
     display: flex;
     gap: 1.3rem
