@@ -47,7 +47,8 @@ function Home() {
 
       <Form>
 
-      <PageTitle></PageTitle>
+      {/* <PageTitle></PageTitle> */}
+      <PageTitle text="Cadastrar Usuários" />
 
         <ContainerInputs>
             <div>

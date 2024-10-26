@@ -1,9 +1,9 @@
 import { Title } from "./styles";
 
-function PageTitle(){
+function PageTitle({text}){
     return(
         <Title>
-            <Title>Cadastrar Usuários</Title>
+            {text}
         </Title>
     )
 }

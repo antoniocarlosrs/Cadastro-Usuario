@@ -41,7 +41,7 @@ function ListUsers() {
     return (
     <Container>
         <TopBackground />
-        <PageTitle />
+        <PageTitle text="Usuários Cadastrados" />
 
         <ContainerUsers>
             {/*Estrutura p/ Colocar array na tela*/}
