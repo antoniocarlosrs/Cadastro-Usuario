@@ -32,6 +32,12 @@ function Home() {
       age: parseInt (inputAge.current.value),
       name: inputName.current.value
     })
+
+    // Limpar os campos após o cadastro
+    inputName.current.value = '';
+    inputAge.current.value = '';
+    inputEmail.current.value = '';
+
   }
 
   return (

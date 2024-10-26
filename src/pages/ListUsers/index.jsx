@@ -29,6 +29,15 @@ function ListUsers() {
         getUsers();
     }, []);
 
+    //Deletar usuários
+    async function deleteUsers(id) {
+        await api.delete(`/usuarios/${id}`)
+
+        //Filtrar todos os usuarios diferentes, e colocar dentro da função upadateUsers
+        const upadateUsers = users.filter( user => user.id !== id)
+        setUsers(upadateUsers)
+    }
+
     return (
     <Container>
         <TopBackground />
@@ -44,7 +53,7 @@ function ListUsers() {
                         <p>{user.age}</p>
                         <p>{user.email}</p>
                     </div>
-                <TrashIcon src={Trash} alt="Icone-Lixo"/>    
+                <TrashIcon src={Trash} alt="Icone-Lixo" onClick={() => deleteUsers(user.id)}/>    
                 </CardUsers>
             ))}
         </ContainerUsers>
